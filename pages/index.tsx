@@ -1,7 +1,6 @@
-import Image from 'next/image'
+import Postbox from '@/components/Postbox'
 import { Inter } from 'next/font/google'
 import Head from 'next/head'
-import Header from '@/components/Header'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -11,10 +10,11 @@ export default function Home() {
       <Head> 
         <title>Wshpr</title>
       </Head>
-
-      <Header></Header>
-
-
+      {/* PostBox */}
+      <Postbox/>
+      <div>
+        {/* Feed */}
+      </div>
     </div>
   )
 }
